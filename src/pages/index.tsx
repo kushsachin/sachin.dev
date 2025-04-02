@@ -8,35 +8,52 @@ import ExperienceSection from "@/components/ExperienceSection";
 import GitHubContributions from "@/components/GitHubContributions";
 import ProjectsSection from "@/components/ProjectsSection";
 import BackToTop from "@/components/BackToTop";
+import Seo from "@/components/Seo";
+import OneLast from "@/components/OneLast";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 export default function Portfolio() {
   const { isDark } = useTheme();
 
   return (
-    <div
-      className={`relative min-h-screen flex flex-col transition-colors duration-300 ${
-        isDark ? "bg-[#2A271F] text-[#B88E6A]" : "bg-white text-[#185693]"
-      }`}
-    >
-      {/* Header */}
-      <Header />
-      <BackToTop />
-      <main className="flex-grow">
-        {/* Hero Section */}
-        <HeroSection />
+    <>
+    <ToastContainer />
 
-        {/* Skills Section */}
-        <SkillsSection />
+      <Seo
+        title="Sachin | Software Front-end Developer (React.js | Next.js | TypeScript)"
+        description="3 years of experience building scalable web applications with React.js, Next.js & TypeScript. Specialized in REST API integration, UI performance optimization, and crafting responsive user interfaces."
+        keywords="Software Front-end Developer, Frontend Developer, React Developer, Next.js Developer, TypeScript, JavaScript, Redux Toolkit, Web Development, UI Optimization, Frontend Engineer, HTML5, CSS3, Tailwind CSS, Material UI"
+        url="https://sachindev.vercel.app/"
+        image="/assets/img/my-profile.png"
+      />
+      <div
+        className={`relative min-h-screen flex flex-col transition-colors duration-300 ${
+          isDark ? "bg-[#2A271F] text-[#B88E6A]" : "bg-white text-[#185693]"
+        }`}
+      >
+        {/* Header */}
+        <Header />
+        <BackToTop />
+        <main className="flex-grow">
+          {/* Hero Section */}
+          <HeroSection />
 
-        {/* Experience Section */}
-        <ExperienceSection />
+          {/* Skills Section */}
+          <SkillsSection />
 
-        {/* GitHub Contributions */}
-        <GitHubContributions />
+          {/* Experience Section */}
+          <ExperienceSection />
 
-        <ProjectsSection />
-      </main>
-      <Footer />
-    </div>
+          {/* GitHub Contributions */}
+          <GitHubContributions />
+
+          <ProjectsSection />
+
+          <OneLast />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

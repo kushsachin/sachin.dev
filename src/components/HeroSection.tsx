@@ -5,9 +5,8 @@ import {
   FiMail,
   FiLinkedin,
   FiGithub,
-  FiArrowRight,
   FiBriefcase,
-  FiPhone,
+  // FiPhone,
 } from "react-icons/fi";
 
 export default function HeroSection() {
@@ -74,17 +73,35 @@ export default function HeroSection() {
           >
             {/* Warm Brown Primary Button */}
             <a
-              href="#contact"
-              className="group relative flex items-center justify-center gap-2 bg-[#B88E6A] hover:bg-[#9a7555] text-white px-6 py-3 rounded-lg overflow-hidden transition-all duration-300 shadow-md hover:shadow-lg"
+              href="/assets/Sachin_Front-end_Developer_Resume.pdf"
+              download="Sachin_Front-end_Developer_Resume.pdf"
+              className="group relative flex items-center justify-center gap-2 bg-gradient-to-r from-[#B88E6A] to-[#D8A875] hover:from-[#9a7555] hover:to-[#C0956A] text-white px-8 py-3 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-[#B7C7F3]/20 to-transparent w-0 group-hover:w-full transition-all duration-500 ease-out"></span>
+              {/* Animated background layer */}
+              <span className="absolute inset-0 bg-[length:200%_100%] bg-gradient-to-r from-[#B7C7F3]/10 via-[#D8FFC0]/15 to-[#B7C7F3]/10 group-hover:bg-[position:100%_0] transition-all duration-700 ease-out"></span>
+
+              {/* Main content */}
               <span className="relative z-10 font-medium flex items-center gap-2">
-                Get In Touch
-                <FiArrowRight
-                  size={18}
-                  className="transition-transform group-hover:translate-x-1"
-                />
+                Download Resume
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
               </span>
+
+              {/* Glow effect */}
+              <span className="absolute -inset-1 bg-white/10 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </a>
 
             <a
@@ -123,7 +140,7 @@ export default function HeroSection() {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className={`w-[130px] h-[1px] mx-auto md:mx-0 mt-0 origin-left ${
+                className={`w-[130px] h-[1px] mx-0 mt-0 origin-left ${
                   isDark ? "bg-[#D8FFC0]" : "bg-[#B88E6A]"
                 }`}
               ></motion.div>
@@ -150,11 +167,11 @@ export default function HeroSection() {
                   href: "https://github.com/kushsachin",
                   label: "GitHub",
                 },
-                {
-                  icon: <FiPhone size={22} />,
-                  href: "tel:+919169388485",
-                  label: "Call Me",
-                },
+                // {
+                //   icon: <FiPhone size={22} />,
+                //   href: "tel:+919169388485",
+                //   label: "Call Me",
+                // },
               ].map((item, index) => (
                 <motion.a
                   key={index}
