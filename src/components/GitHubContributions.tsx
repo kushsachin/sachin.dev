@@ -7,7 +7,7 @@ export default function GitHubContributions() {
   const username = "kushsachin";
 
   return (
-    <section className="container mx-auto px-6 py-16 md:py-[60px] lg:py-[80px]">
+    <section className="container mx-auto px-6 py-15">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

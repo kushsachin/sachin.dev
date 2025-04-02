@@ -9,9 +9,9 @@ export const experiences = [
     achievements: [
       "Architected and developed 3 enterprise SaaS platforms serving 50+ clients, implementing responsive UI components with 98% accessibility score",
       "Optimized API handling reducing processing time by 30% through intelligent caching and request batching",
-      "Designed role-based access control system serving 200+ simultaneous users with zero security incidents",
+      // "Designed role-based access control system serving 200+ simultaneous users with zero security incidents",
       "Implemented virtualized rendering for data-heavy interfaces, improving scroll performance by 45%",
-      "Mentored 3 junior developers in React best practices and TypeScript adoption",
+      // "Mentored 3 junior developers in React best practices and TypeScript adoption",
     ],
     metrics: [
       { value: "30%", label: "Performance Improvement" },
@@ -27,9 +27,9 @@ export const experiences = [
     technologies: ["React", "JavaScript", "Redux", "Material UI", "REST APIs"],
     achievements: [
       "Developed marketplace integration modules handling 10,000+ daily product syncs with 99.8% accuracy",
-      "Reduced inventory discrepancies by 15% through real-time validation systems",
+      // "Reduced inventory discrepancies by 15% through real-time validation systems",
       "Optimized product listing workflows decreasing average task completion time by 30%",
-      "Implemented interactive data visualization dashboards improving user engagement by 20%",
+      // "Implemented interactive data visualization dashboards improving user engagement by 20%",
       "Collaborated with UX team to implement design system across 50+ components",
     ],
     metrics: [

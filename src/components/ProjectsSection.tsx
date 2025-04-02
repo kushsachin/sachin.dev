@@ -35,7 +35,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="container mx-auto px-6 py-16 md:py-[60px] lg:py-[80px]"
+      className="container mx-auto px-6 py-15"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}

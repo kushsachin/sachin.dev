@@ -1,13 +1,9 @@
 import { useTheme } from "@/context/ThemeContext";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  FiMail,
-  FiLinkedin,
-  FiGithub,
-  FiBriefcase,
-  // FiPhone,
-} from "react-icons/fi";
+import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
+import DownloadButton from "./DownloadButton";
+import ProjectsButton from "./ProjectsButton";
 
 export default function HeroSection() {
   const { isDark } = useTheme();
@@ -72,52 +68,13 @@ export default function HeroSection() {
             className="flex flex-col mb-2 sm:flex-row gap-4 pt-1"
           >
             {/* Warm Brown Primary Button */}
-            <a
-              href="/assets/Sachin_Front-end_Developer_Resume.pdf"
-              download="Sachin_Front-end_Developer_Resume.pdf"
-              className="group relative flex items-center justify-center gap-2 bg-gradient-to-r from-[#B88E6A] to-[#D8A875] hover:from-[#9a7555] hover:to-[#C0956A] text-white px-8 py-3 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              {/* Animated background layer */}
-              <span className="absolute inset-0 bg-[length:200%_100%] bg-gradient-to-r from-[#B7C7F3]/10 via-[#D8FFC0]/15 to-[#B7C7F3]/10 group-hover:bg-[position:100%_0] transition-all duration-700 ease-out"></span>
+            <DownloadButton
+              fileUrl="/assets/Sachin_Front-end_Developer_Resume.pdf"
+              fileName="Sachin_Front-end_Developer_Resume.pdf"
+              buttonText="Download Resume"
+            />
 
-              {/* Main content */}
-              <span className="relative z-10 font-medium flex items-center gap-2">
-                Download Resume
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-              </span>
-
-              {/* Glow effect */}
-              <span className="absolute -inset-1 bg-white/10 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            </a>
-
-            <a
-              href="#projects"
-              className={`flex justify-center items-center gap-2 px-6 py-3 rounded-lg border-2 transition-all ${
-                isDark
-                  ? "border-[#D8FFC0] text-[#D8FFC0] hover:bg-[#D8FFC0]/5"
-                  : "border-[#185693] text-[#185693] hover:bg-[#185693]/5"
-              } font-medium`}
-            >
-              <FiBriefcase
-                size={18}
-                className="transition-transform group-hover:translate-x-1"
-              />
-              View Portfolio
-            </a>
+            <ProjectsButton />
           </motion.div>
 
           <motion.div

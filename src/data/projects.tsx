@@ -5,7 +5,7 @@ export const projects = [
     role: "Software Developer",
     timeframe: "2023 - Present",
     description:
-      "Enterprise SaaS solution for service businesses with CRM, inventory management, and analytics",
+      "An enterprise SaaS platform for service businesses, Offering CRM, Inventory, Sales, Real-time analytics, and automated workflows.",
     image: "/images/projects/service-management.png",
     technologies: [
       "React",
@@ -16,10 +16,12 @@ export const projects = [
       "MUI",
     ],
     features: [
-      "Real-time analytics dashboard",
-      "Role-based access control",
-      "Inventory tracking across multiple locations",
-      "Sales pipeline visualization",
+      "Sales & Purchase Management",
+      "Inventory Tracking with Batch & Serial Management",
+      "Role-Based Access Control",
+      "GST Reports & Compliance",
+      "Automated Workflows",
+      "Real-time Analytics Dashboard",
     ],
     metrics: [
       { value: "30%", label: "Faster load times" },
@@ -28,7 +30,7 @@ export const projects = [
     ],
     links: {
       demo: "https://srvc.dataalay.com",
-      repo: "https://github.com/yourusername/service-platform",
+      repo: null,
     },
   },
   {
@@ -37,14 +39,16 @@ export const projects = [
     role: "Software Developer",
     timeframe: "2023 - Present",
     description:
-      "Comprehensive solution for tracking assets across multiple locations with warranty and maintenance management",
+      "A robust asset management platform designed for tracking, with integrated warranty, AMC, repair workflows, and real-time insights to optimize efficiency.",
     image: "/images/projects/asset-management.png",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Material UI"],
     features: [
-      "Multi-location asset tracking",
-      "AMC (Annual Maintenance Contract) management",
-      "Warranty tracking system",
-      "Repair management workflow",
+      "Multi-Location Asset Tracking",
+      "Asset Checkout & Returns Management",
+      "AMC & Warranty Tracking System",
+      "Repair & Insurance Workflow Automation",
+      "Role-Based Access Control for Security",
+      "Real-time Asset Monitoring & Insights",
     ],
     metrics: [
       { value: "25%", label: "Performance improvement" },
