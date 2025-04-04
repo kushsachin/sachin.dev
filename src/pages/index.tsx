@@ -10,7 +10,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import BackToTop from "@/components/BackToTop";
 import Seo from "@/components/Seo";
 import OneLast from "@/components/OneLast";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 export default function Portfolio() {
@@ -18,10 +18,10 @@ export default function Portfolio() {
 
   return (
     <>
-    <ToastContainer />
+      <ToastContainer />
 
       <Seo
-        title="Sachin | Software Front-end Developer (React.js | Next.js | TypeScript)"
+        title="Sachin | Frontend Developer"
         description="3 years of experience building scalable web applications with React.js, Next.js & TypeScript. Specialized in REST API integration, UI performance optimization, and crafting responsive user interfaces."
         keywords="Software Front-end Developer, Frontend Developer, React Developer, Next.js Developer, TypeScript, JavaScript, Redux Toolkit, Web Development, UI Optimization, Frontend Engineer, HTML5, CSS3, Tailwind CSS, Material UI"
         url="https://sachindev.vercel.app/"

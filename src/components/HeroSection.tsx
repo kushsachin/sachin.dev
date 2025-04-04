@@ -35,7 +35,7 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight tracking-tight">
+            <div className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight tracking-tight">
               <span
                 className={`${
                   isDark ? "text-[#B7C7F3]" : "text-[#2A271F]"
@@ -43,11 +43,16 @@ export default function HeroSection() {
               >
                 {`Hello, I'm `}
               </span>
-              <span className="bg-gradient-to-r from-[#B88E6A] via-[#D8FFC0] to-[#B7C7F3] bg-clip-text text-transparent block">
+              <h1
+                className={`bg-gradient-to-r ${
+                  isDark
+                    ? "from-[#B88E6A] to-[#D8FFC0]"
+                    : "from-[#B88E6A] to-[#185693]/80"
+                } bg-clip-text text-transparent inline-block`}
+              >
                 Sachin | Frontend Developer
-              </span>
-              {/* <span className={`text-xl md:text-2xl text-[#B88E6A] dark:text-[#D8FFC0] block mt-2`}></span> */}
-            </h1>
+              </h1>
+            </div>
 
             <p
               className={`text-lg text-justify lg:text-left md:text-xl ${

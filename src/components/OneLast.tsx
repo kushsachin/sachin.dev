@@ -86,11 +86,14 @@ function OneLast() {
                   whileInView={{ backgroundPosition: "100% 50%" }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.5, ease: "linear" }}
-                  className={`bg-gradient-to-r ${
+                  className={`bg-gradient-to-r 
+                  ${
                     isDark
-                      ? "from-[#B88E6A] via-[#D8FFC0] to-[#B7C7F3]"
-                      : "from-[#9a7555] via-[#6cdb28] to-[#13487A]"
-                  } bg-clip-text text-transparent`}
+                      ? "from-[#B88E6A] to-[#D8FFC0]"
+                      : "from-[#B88E6A] to-[#185693]/90"
+                  }
+                  
+                  bg-clip-text text-transparent`}
                 >
                   Remarkable Together
                 </motion.span>
