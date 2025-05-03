@@ -54,6 +54,13 @@ export default function HeroSection() {
               </h1>
             </div>
 
+            <h5
+              className={`text-lg md:text-xl ${
+                isDark ? "text-[#B88E6A]" : "text-[#185693]"
+              } inline-block mb-2`}
+            >
+              Around 3 Years Experience Building Scalable Web Applications
+            </h5>
             <p
               className={`text-lg text-justify lg:text-left md:text-xl ${
                 isDark ? "text-[#B7C7F3]/80" : "text-[#2A271F]/80"
@@ -129,11 +136,6 @@ export default function HeroSection() {
                   href: "https://github.com/kushsachin",
                   label: "GitHub",
                 },
-                // {
-                //   icon: <FiPhone size={22} />,
-                //   href: "tel:+919169388485",
-                //   label: "Call Me",
-                // },
               ].map((item, index) => (
                 <motion.a
                   key={index}
