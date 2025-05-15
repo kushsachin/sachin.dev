@@ -59,7 +59,7 @@ export default function HeroSection() {
                 isDark ? "text-[#B88E6A]" : "text-[#185693]"
               } inline-block mb-2`}
             >
-              Around 3 Years Experience Building Scalable Web Applications
+              With 3 Years Experience Building Scalable Web Applications
             </h5>
             <p
               className={`text-lg text-justify lg:text-left md:text-xl ${
