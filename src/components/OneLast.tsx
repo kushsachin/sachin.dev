@@ -116,8 +116,8 @@ function OneLast() {
               className="flex flex-col sm:flex-row justify-center gap-4 pt-2"
             >
               <DownloadButton
-                fileUrl="/assets/Sachin_Front-end_Developer_Resume.pdf"
-                fileName="Sachin_Front-end_Developer_Resume.pdf"
+                fileUrl="/assets/Sachin_FrontEnd_Developer_Resume.pdf"
+                fileName="Sachin_FrontEnd_Developer_Resume.pdf"
                 buttonText="Download Resume"
               />
               <a
