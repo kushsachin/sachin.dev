@@ -83,7 +83,7 @@ const DownloadButton = ({
       }`}
     >
       {/* Animated background layer */}
-      <span className="absolute inset-0 bg-[length:200%_100%] bg-gradient-to-r from-[#B7C7F3]/10 via-[#D8FFC0]/15 to-[#B7C7F3]/10 group-hover:bg-[position:100%_0] transition-all duration-700 ease-out"></span>
+      <span className="absolute inset-0 bg-[length:200%_100%] bg-gradient-to-r from-[#3B82F6]/10 via-[#93C5FD]/15 to-[#3B82F6]/10 group-hover:bg-[position:100%_0] transition-all duration-700 ease-out"></span>
 
       {/* Main content */}
       <span className="relative z-10 font-medium flex items-center gap-2">

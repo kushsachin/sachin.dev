@@ -31,9 +31,9 @@ export default function BackToTop() {
     <motion.button
       onClick={scrollToTop}
       className={`fixed bottom-6 right-6 p-2 rounded-full backdrop-blur-[3px] border-2 ${
-        isDark ? "border-[#B7C7F3]/20" : "border-[#2A271F]/20"
+        isDark ? "border-[#93C5FD]/20" : "border-[#111612]/20"
       } shadow-sm hover:shadow-md transition-all ${
-        isDark ? "bg-[#2A271F]/70" : "bg-white/70"
+        isDark ? "bg-[#111612]/70" : "bg-white/70"
       }`}
       aria-label="Back to top"
       initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export default function BackToTop() {
           <FiArrowUp
             size={22}
             strokeWidth={2.5}
-            className={isDark ? "text-[#D8FFC0]" : "text-[#185693]"}
+            className={isDark ? "text-[#93C5FD]" : "text-[#185693]"}
           />
         </motion.div>
       </div>

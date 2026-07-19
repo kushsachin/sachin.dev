@@ -24,7 +24,7 @@ const FooterSection = ({
     <h3
       className={`text-lg font-semibold pb-2 ${
         isDark
-          ? "text-[#D8FFC0] border-b border-[#D8FFC0]/30"
+          ? "text-[#93C5FD] border-b border-[#93C5FD]/30"
           : "text-[#185693] border-b border-[#185693]/30"
       }`}
     >
@@ -53,8 +53,8 @@ const SocialIcon = ({
     rel="noopener noreferrer"
     className={`p-3 rounded-lg transition-all ${
       isDark
-        ? "bg-[#2A271F]/50 hover:bg-[#D8FFC0]/10 text-[#B7C7F3] hover:text-[#D8FFC0]"
-        : "bg-white/50 hover:bg-[#B88E6A]/10 text-[#2A271F] hover:text-[#B88E6A]"
+        ? "bg-[#111612]/50 hover:bg-[#93C5FD]/10 text-[#93C5FD] hover:text-[#93C5FD]"
+        : "bg-white/50 hover:bg-[#B88E6A]/10 text-[#111612] hover:text-[#B88E6A]"
     }`}
     aria-label={label}
   >
@@ -75,7 +75,7 @@ export default function Footer() {
   return (
     <footer
       className={`py-4 border-t ${
-        isDark ? "border-[#B7C7F3]/20" : "border-[#2A271F]/20"
+        isDark ? "border-[#93C5FD]/20" : "border-[#111612]/20"
       }`}
     >
       <div className="container mx-auto px-6 py-4 relative z-10">
@@ -85,7 +85,7 @@ export default function Footer() {
             <h3
               className={`text-lg font-semibold pb-2 ${
                 isDark
-                  ? "text-[#D8FFC0] border-b border-[#D8FFC0]/30"
+                  ? "text-[#93C5FD] border-b border-[#93C5FD]/30"
                   : "text-[#185693] border-b border-[#185693]/30"
               }`}
             >
@@ -96,16 +96,16 @@ export default function Footer() {
                 <FiMail
                   className={
                     isDark
-                      ? "text-[#B7C7F3] group-hover:text-[#D8FFC0]"
-                      : "text-[#2A271F] group-hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD] group-hover:text-[#93C5FD]"
+                      : "text-[#111612] group-hover:text-[#B88E6A]"
                   }
                 />
                 <a
                   href="mailto:usachin017@gmail.com"
                   className={`text-sm transition-colors ${
                     isDark
-                      ? "text-[#B7C7F3]/80 hover:text-[#D8FFC0]"
-                      : "text-[#2A271F]/80 hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD]/80 hover:text-[#93C5FD]"
+                      : "text-[#111612]/80 hover:text-[#B88E6A]"
                   }`}
                 >
                   usachin017@gmail.com
@@ -115,13 +115,13 @@ export default function Footer() {
                 <FiMapPin
                   className={
                     isDark
-                      ? "text-[#B7C7F3] group-hover:text-[#D8FFC0]"
-                      : "text-[#2A271F] group-hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD] group-hover:text-[#93C5FD]"
+                      : "text-[#111612] group-hover:text-[#B88E6A]"
                   }
                 />
                 <span
                   className={`text-sm ${
-                    isDark ? "text-[#B7C7F3]/80" : "text-[#2A271F]/80"
+                    isDark ? "text-[#93C5FD]/80" : "text-[#111612]/80"
                   }`}
                 >
                   Lucknow, Uttar Pradesh
@@ -135,7 +135,7 @@ export default function Footer() {
             <h3
               className={`text-lg font-semibold pb-2 ${
                 isDark
-                  ? "text-[#D8FFC0] border-b border-[#D8FFC0]/30"
+                  ? "text-[#93C5FD] border-b border-[#93C5FD]/30"
                   : "text-[#185693] border-b border-[#185693]/30"
               }`}
             >
@@ -146,16 +146,16 @@ export default function Footer() {
                 <FiArrowRight
                   className={
                     isDark
-                      ? "text-[#B7C7F3] group-hover:text-[#D8FFC0]"
-                      : "text-[#2A271F] group-hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD] group-hover:text-[#93C5FD]"
+                      : "text-[#111612] group-hover:text-[#B88E6A]"
                   }
                 />
                 <Link
                   href="#skills"
                   className={`text-sm transition-colors ${
                     isDark
-                      ? "text-[#B7C7F3]/80 hover:text-[#D8FFC0]"
-                      : "text-[#2A271F]/80 hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD]/80 hover:text-[#93C5FD]"
+                      : "text-[#111612]/80 hover:text-[#B88E6A]"
                   }`}
                 >
                   Skills
@@ -165,16 +165,16 @@ export default function Footer() {
                 <FiArrowRight
                   className={
                     isDark
-                      ? "text-[#B7C7F3] group-hover:text-[#D8FFC0]"
-                      : "text-[#2A271F] group-hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD] group-hover:text-[#93C5FD]"
+                      : "text-[#111612] group-hover:text-[#B88E6A]"
                   }
                 />
                 <Link
                   href="#projects"
                   className={`text-sm transition-colors ${
                     isDark
-                      ? "text-[#B7C7F3]/80 hover:text-[#D8FFC0]"
-                      : "text-[#2A271F]/80 hover:text-[#B88E6A]"
+                      ? "text-[#93C5FD]/80 hover:text-[#93C5FD]"
+                      : "text-[#111612]/80 hover:text-[#B88E6A]"
                   }`}
                 >
                   Projects
@@ -211,8 +211,8 @@ export default function Footer() {
                 onClick={toggleTheme}
                 className={`p-3 rounded-lg transition-all ${
                   isDark
-                    ? "bg-[#2A271F]/50 hover:bg-[#D8FFC0]/10 text-[#B7C7F3] hover:text-[#D8FFC0]"
-                    : "bg-white/50 hover:bg-[#B88E6A]/10 text-[#2A271F] hover:text-[#B88E6A]"
+                    ? "bg-[#111612]/50 hover:bg-[#93C5FD]/10 text-[#93C5FD] hover:text-[#93C5FD]"
+                    : "bg-white/50 hover:bg-[#B88E6A]/10 text-[#111612] hover:text-[#B88E6A]"
                 }`}
                 aria-label="Toggle theme"
               >
@@ -223,10 +223,10 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-6 border-t border-[#B7C7F3]/10 text-center">
+        <div className="mt-12 pt-6 border-t border-[#93C5FD]/10 text-center">
           <p
             className={`text-xs ${
-              isDark ? "text-[#B7C7F3]/70" : "text-[#2A271F]/70"
+              isDark ? "text-[#93C5FD]/70" : "text-[#111612]/70"
             }`}
           >
             © {new Date().getFullYear()} Sachin. All rights reserved.

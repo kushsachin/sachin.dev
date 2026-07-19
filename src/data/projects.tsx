@@ -3,10 +3,10 @@ export const projects = [
     id: 1,
     title: "Service Management Platform",
     role: "Software Developer",
-    timeframe: "2023 - Present",
+    timeframe: "2023 - 2025",
     description:
       "An enterprise SaaS platform for service businesses, Offering CRM, Inventory, Sales, Real-time analytics, and automated workflows.",
-    image: "/images/projects/service-management.png",
+    image: "/assets/img/service-management.png",
     technologies: [
       "React",
       "TypeScript",
@@ -37,10 +37,10 @@ export const projects = [
     id: 2,
     title: "Asset Management System",
     role: "Software Developer",
-    timeframe: "2023 - Present",
+    timeframe: "2024 - 2025",
     description:
       "A robust asset management platform designed for tracking, with integrated warranty, AMC, repair workflows, and real-time insights to optimize efficiency.",
-    image: "/images/projects/asset-management.png",
+    image: "/assets/img/asset-management.png",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Material UI"],
     features: [
       "Multi-Location Asset Tracking",
@@ -64,16 +64,16 @@ export const projects = [
     id: 3,
     title: "EOU Management System",
     role: "Software Developer",
-    timeframe: "2023 - Present",
+    timeframe: "2023 - 2024",
     description:
-      "Analytics dashboard for Export Oriented Unit (EOU) management with BOE processing and stock reporting",
-    image: "/images/projects/eou-management.png",
+      "A comprehensive web application for managing Export Oriented Unit (EOU) operations, enabling businesses to monitor import/export activities, process Bills of Entry (BOE), track inventory in real time, and analyze operational performance through interactive dashboards.",
+    image: "/assets/img/eou-management.png",
     technologies: ["React", "TypeScript", "Redux", "Chart.js", "Tailwind CSS"],
     features: [
-      "Custom analytics dashboard",
-      "BOE (Bill of Entry) processing",
-      "Real-time stock reports",
-      "Employee role management",
+      "Interactive analytics dashboard with business insights",
+      "BOE (Bill of Entry) processing & tracking",
+      "Real-time inventory and stock monitoring",
+      "Employee role-based access control",
     ],
     metrics: [
       { value: "30%", label: "Boost in user engagement" },

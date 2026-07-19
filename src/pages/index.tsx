@@ -22,14 +22,14 @@ export default function Portfolio() {
 
       <Seo
         title="Sachin | Frontend Developer"
-        description="3 years of experience building scalable web applications with React.js, Next.js & TypeScript. Specialized in REST API integration, UI performance optimization, and crafting responsive user interfaces."
+        description="3 years and 5 months of experience building scalable web applications with React.js, Next.js & TypeScript. Specialized in REST API integration, UI performance optimization, and crafting responsive user interfaces."
         keywords="Software Front-end Developer, Frontend Developer, React Developer, Next.js Developer, TypeScript, JavaScript, Redux Toolkit, Web Development, UI Optimization, Frontend Engineer, HTML5, CSS3, Tailwind CSS, Material UI"
         url="https://sachindev.vercel.app/"
         image="/assets/img/my-profile.png"
       />
       <div
         className={`relative min-h-screen flex flex-col transition-colors duration-300 ${
-          isDark ? "bg-[#2A271F] text-[#B88E6A]" : "bg-white text-[#185693]"
+          isDark ? "bg-[#111612] text-[#E2E8F0]" : "bg-white text-[#185693]"
         }`}
       >
         {/* Header */}

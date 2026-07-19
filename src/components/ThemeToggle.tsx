@@ -32,7 +32,7 @@ export default function ThemeToggle() {
           )}
         </motion.div>
       </div>
-      {/* <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#B7C7F3]/10 to-[#D8FFC0]/10 dark:from-[#2A271F]/20 dark:to-[#B88E6A]/10 opacity-0 hover:opacity-100 transition-opacity"></div> */}
+      {/* <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#3B82F6]/10 to-[#93C5FD]/10 dark:from-[#111612]/20 dark:to-[#B88E6A]/10 opacity-0 hover:opacity-100 transition-opacity"></div> */}
     </motion.button>
   );
 }

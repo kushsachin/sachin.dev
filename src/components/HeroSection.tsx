@@ -21,15 +21,13 @@ export default function HeroSection() {
             className="space-y-6"
           >
             <div
-              className={`inline-flex items-center gap-3 px-4 py-2 bg-[#B7C7F3]/20 rounded-full border ${
-                isDark ? "border-[#B7C7F3]/80" : "border-[#2A271F]/80"
-              }`}
+              className={`inline-flex items-center gap-3 px-4 py-2 bg-[#93C5FD]/20 rounded-full border ${isDark ? "border-[#93C5FD]/80" : "border-[#111612]/80"
+                }`}
             >
               <span className="w-3 h-3 rounded-full bg-[#6cdb28] animate-pulse"></span>
               <span
-                className={`text-sm font-medium ${
-                  isDark ? "text-[#B7C7F3]" : "text-[#2A271F]"
-                }`}
+                className={`text-sm font-medium ${isDark ? "text-[#93C5FD]" : "text-[#111612]"
+                  }`}
               >
                 Available for opportunities
               </span>
@@ -37,34 +35,30 @@ export default function HeroSection() {
 
             <div className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight tracking-tight">
               <span
-                className={`${
-                  isDark ? "text-[#B7C7F3]" : "text-[#2A271F]"
-                } block`}
+                className={`${isDark ? "text-[#93C5FD]" : "text-[#111612]"
+                  } block`}
               >
                 {`Hello, I'm `}
               </span>
               <h1
-                className={`bg-gradient-to-r ${
-                  isDark
-                    ? "from-[#B88E6A] to-[#D8FFC0]"
-                    : "from-[#B88E6A] to-[#185693]/80"
-                } bg-clip-text text-transparent inline-block`}
+                className={`bg-gradient-to-r ${isDark
+                  ? "from-[#B88E6A] to-[#93C5FD]"
+                  : "from-[#B88E6A] to-[#185693]/80"
+                  } bg-clip-text text-transparent inline-block`}
               >
                 Sachin | Frontend Developer
               </h1>
             </div>
 
             <h5
-              className={`text-lg md:text-xl ${
-                isDark ? "text-[#B88E6A]" : "text-[#185693]"
-              } inline-block mb-2`}
+              className={`text-lg md:text-xl ${isDark ? "text-[#B88E6A]" : "text-[#185693]"
+                } inline-block mb-2`}
             >
-              With 3 Years Experience Building Scalable Web Applications
+              With 4.2 Years of Experience Building Scalable Web Applications
             </h5>
             <p
-              className={`text-lg text-justify lg:text-left md:text-xl ${
-                isDark ? "text-[#B7C7F3]/80" : "text-[#2A271F]/80"
-              }  max-w-2xl`}
+              className={`text-lg text-justify lg:text-left md:text-xl ${isDark ? "text-[#93C5FD]/80" : "text-[#111612]/80"
+                }  max-w-2xl`}
             >
               Crafting dynamic web experiences with React.js and Next.js.
               Passionate about clean code, performance optimization, and
@@ -98,9 +92,8 @@ export default function HeroSection() {
           >
             <div className="mb-6">
               <p
-                className={`text-lg uppercase tracking-widest ${
-                  isDark ? "text-[#B7C7F3]/90" : "text-[#B88E6A]/90"
-                } mb-[0.5px] relative inline-block font-[600]`}
+                className={`text-xl uppercase tracking-widest ${isDark ? "text-[#93C5FD]" : "text-[#185693]"
+                  } mb-[0.5px] relative inline-block font-[600]`}
               >
                 Connect with me
               </p>
@@ -109,16 +102,14 @@ export default function HeroSection() {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className={`w-[130px] h-[1px] mx-0 mt-0 origin-left ${
-                  isDark ? "bg-[#D8FFC0]" : "bg-[#B88E6A]"
-                }`}
+                className={`w-[130px] h-[1px] mx-0 mt-0 origin-left ${isDark ? "bg-[#93C5FD]" : "bg-[#185693]"
+                  }`}
               ></motion.div>
             </div>
 
             <div
-              className={`flex gap-5 ${
-                isDark ? "text-[#B7C7F3]/80" : "text-[#2A271F]/80"
-              } `}
+              className={`flex gap-5 ${isDark ? "text-[#93C5FD]/80" : "text-[#111612]/80"
+                } `}
             >
               {[
                 {
@@ -143,24 +134,22 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.label}
-                  className={`p-3 rounded-xl border border-2 ${
-                    isDark
-                      ? "bg-[#2A271F]/30 border-[#B7C7F3]/80 hover:border-[#D8FFC0]/50"
-                      : "bg-white/30 border-[#2A271F]/80 hover:border-[#B88E6A]/50"
-                  } backdrop-blur-sm transition-all duration-300 group relative`}
+                  className={`p-3 rounded-xl border border-2 ${isDark
+                    ? "bg-[#111612]/30 border-[#93C5FD]/80 hover:border-[#93C5FD]/50"
+                    : "bg-white/30 border-[#111612]/80 hover:border-[#B88E6A]/50"
+                    } backdrop-blur-sm transition-all duration-300 group relative`}
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <span
-                    className={`${
-                      isDark
-                        ? "group-hover:text-[#D8FFC0]"
-                        : "group-hover:text-[#B88E6A]"
-                    } transition-colors duration-300`}
+                    className={`${isDark
+                      ? "group-hover:text-[#93C5FD]"
+                      : "group-hover:text-[#B88E6A]"
+                      } transition-colors duration-300`}
                   >
                     {item.icon}
                   </span>
-                  <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#B88E6A]/5 to-[#D8FFC0]/5 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#B88E6A]/5 to-[#93C5FD]/5 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 </motion.a>
               ))}
             </div>
@@ -196,8 +185,8 @@ export default function HeroSection() {
                   ease: "linear",
                 }}
                 className="absolute inset-0 bg-gradient-to-br 
-    from-[#B7C7F3]/50 via-[#D8FFC0]/40 to-[#B88E6A]/30 
-    dark:from-[#2A271F]/50 dark:via-[#B88E6A]/25 dark:to-[#D8FFC0]/15 
+    from-[#3B82F6]/50 via-[#93C5FD]/40 to-[#B88E6A]/30 
+    dark:from-[#111612]/50 dark:via-[#B88E6A]/25 dark:to-[#93C5FD]/15 
     rounded-[3rem] z-0"
               ></motion.div>
 
@@ -211,8 +200,8 @@ export default function HeroSection() {
                   ease: "linear",
                 }}
                 className="absolute inset-0 bg-gradient-to-bl 
-    from-[#D8FFC0]/40 via-[#B7C7F3]/35 to-[#B88E6A]/30 
-    dark:from-[#B88E6A]/25 dark:via-[#2A271F]/40 dark:to-[#B7C7F3]/15 
+    from-[#93C5FD]/40 via-[#3B82F6]/35 to-[#B88E6A]/30 
+    dark:from-[#B88E6A]/25 dark:via-[#111612]/40 dark:to-[#3B82F6]/15 
     rounded-[3rem] z-0"
               ></motion.div>
               {/* Enhanced Profile Image with hover animation */}
@@ -253,7 +242,7 @@ export default function HeroSection() {
                   }}
                 ></motion.div>
                 <motion.div
-                  className="absolute inset-4 border-2 border-[#D8FFC0] rounded-full"
+                  className="absolute inset-4 border-2 border-[#93C5FD] rounded-full"
                   animate={{ rotate: -360 }}
                   transition={{
                     duration: 25,
@@ -262,7 +251,7 @@ export default function HeroSection() {
                   }}
                 ></motion.div>
                 <motion.div
-                  className="absolute inset-8 border-2 border-[#B7C7F3]/30 rounded-full"
+                  className="absolute inset-8 border-2 border-[#93C5FD]/30 rounded-full"
                   animate={{ rotate: 360 }}
                   transition={{
                     duration: 30,

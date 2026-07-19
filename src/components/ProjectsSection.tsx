@@ -49,9 +49,8 @@ export default function ProjectsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className={`text-3xl md:text-4xl font-bold mb-12 ${
-            isDark ? "text-[#D8FFC0]" : "text-[#185693]"
-          }`}
+          className={`text-3xl text-center md:text-4xl font-bold mb-12 ${isDark ? "text-[#93C5FD]" : "text-[#185693]"
+            }`}
         >
           Featured Projects
         </motion.h2>
@@ -61,21 +60,20 @@ export default function ProjectsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
         >
           {projects.map((project) => (
             <ProjectLightbox key={project.id} project={project}>
               <motion.div
                 variants={item}
-                className={`group relative cursor-pointer rounded-xl p-6 border-2 ${
-                  isDark
-                    ? "bg-[#2A271F]/30 border-[#B7C7F3]/20 hover:border-[#b88e6a]/50"
-                    : "bg-white/30 border-[#2A271F]/20 hover:border-[#185693]/50"
-                } transition-all h-full flex flex-col`}
+                className={`group relative cursor-pointer rounded-xl p-6 border-2 backdrop-blur-sm ${isDark
+                  ? "bg-white/[0.02] border-white/[0.08] hover:border-[#93C5FD]/40"
+                  : "bg-white/30 border-[#111612]/20 hover:border-[#185693]/50"
+                  } transition-all h-full flex flex-col`}
                 whileHover={{
                   // y: -5,
                   boxShadow: isDark
-                    ? "0 10px 25px -5px rgba(216, 255, 192, 0.1)"
+                    ? "0 10px 25px -5px rgba(147, 197, 253, 0.05)"
                     : "0 10px 25px -5px rgba(24, 86, 147, 0.1)",
                 }}
               >
@@ -90,9 +88,9 @@ export default function ProjectsSection() {
                     alt={project.title}
                     width={400}
                     height={280}
-                    className="w-full h-38 object-cover"
+                    className="w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent" />
                 </motion.div>
 
                 {/* Project Header */}
@@ -101,9 +99,8 @@ export default function ProjectsSection() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.1 }}
-                    className={`text-xl font-bold mb-2 ${
-                      isDark ? "text-[#B7C7F3]" : "text-[#B88E6A]"
-                    }`}
+                    className={`text-xl font-bold mb-2 ${isDark ? "text-white" : "text-[#B88E6A]"
+                      }`}
                   >
                     {project.title}
                   </motion.h3>
@@ -112,9 +109,8 @@ export default function ProjectsSection() {
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.15 }}
-                      className={`text-sm ${
-                        isDark ? "text-[#D8FFC0]" : "text-[#185693]"
-                      }`}
+                      className={`text-sm font-medium ${isDark ? "text-[#93C5FD]" : "text-[#185693]"
+                        }`}
                     >
                       {project.role}
                     </motion.span>
@@ -122,9 +118,8 @@ export default function ProjectsSection() {
                       initial={{ opacity: 0, x: 10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.15 }}
-                      className={`text-sm ${
-                        isDark ? "text-[#B7C7F3]/90" : "text-[#2A271F]/90"
-                      }`}
+                      className={`text-sm ${isDark ? "text-slate-400" : "text-[#111612]/60"
+                        }`}
                     >
                       {project.timeframe}
                     </motion.span>
@@ -133,9 +128,8 @@ export default function ProjectsSection() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
-                    className={`text-sm text-justify h-[60px] ${
-                      isDark ? "text-[#B7C7F3]/80" : "text-[#2A271F]/80"
-                    }`}
+                    className={`text-sm text-justify ${isDark ? "text-slate-300" : "text-[#111612]/80"
+                      }`}
                   >
                     {project.description}
                   </motion.p>
@@ -143,7 +137,7 @@ export default function ProjectsSection() {
 
                 {/* Tech Stack */}
                 <motion.div
-                  className="flex flex-wrap gap-2 mb-5 h-[60px] items-start"
+                  className="flex flex-wrap gap-2 mb-5 items-start"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.25 }}
@@ -154,11 +148,10 @@ export default function ProjectsSection() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.1 + idx * 0.03 }}
-                      className={`px-3 py-1 rounded-full text-xs ${
-                        isDark
-                          ? "bg-[#B7C7F3]/10 text-[#B7C7F3] border border-[#B7C7F3]/20"
-                          : "bg-[#185693]/10 text-[#185693] border border-[#185693]/20"
-                      }`}
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${isDark
+                        ? "bg-[#93C5FD]/10 text-[#93C5FD] border border-[#93C5FD]/20"
+                        : "bg-[#185693]/10 text-[#185693] border border-[#185693]/20"
+                        }`}
                     >
                       {tech}
                     </motion.span>
@@ -167,10 +160,11 @@ export default function ProjectsSection() {
 
                 {/* Project Metrics */}
                 <motion.div
-                  className="flex justify-between border-t pt-4 h-[78px]"
+                  className={`flex justify-between border-t pt-4 min-h-[78px] ${isDark ? "border-white/[0.08]" : "border-[#111612]/10"}`}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
+                  style={{ marginTop: 'auto' }}
                 >
                   {project.metrics.map((metric, idx) => (
                     <motion.div
@@ -181,16 +175,14 @@ export default function ProjectsSection() {
                       transition={{ delay: 0.35 + idx * 0.1 }}
                     >
                       <p
-                        className={`text-xl font-bold ${
-                          isDark ? "text-[#D8FFC0]" : "text-[#185693]"
-                        }`}
+                        className={`text-xl font-bold ${isDark ? "text-[#93C5FD]" : "text-[#185693]"
+                          }`}
                       >
                         {metric.value}
                       </p>
                       <p
-                        className={`text-xs ${
-                          isDark ? "text-[#B7C7F3]/70" : "text-[#2A271F]/70"
-                        }`}
+                        className={`text-xs ${isDark ? "text-slate-400" : "text-[#111612]/70"
+                          }`}
                       >
                         {metric.label}
                       </p>
