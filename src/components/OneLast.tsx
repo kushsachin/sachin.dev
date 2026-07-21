@@ -236,8 +236,8 @@ function OneLast() {
 
                 <div className="flex flex-col xl:flex-row gap-4 pt-4">
                   <DownloadButton
-                    fileUrl="/assets/Sachin_FrontEnd_Developer_Resume.pdf"
-                    fileName="Sachin_FrontEnd_Developer_Resume.pdf"
+                    fileUrl="/assets/Sachin_Frontend_Developer_Resume_4y.pdf"
+                    fileName="Sachin_Frontend_Developer_Resume_4y.pdf"
                     buttonText="Download Resume"
                   />
                   <a
