@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { useTheme } from "../context/ThemeContext";
 import ThemeToggle from "./ThemeToggle";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -8,7 +8,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 export default function Header() {
   const { isDark } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
   // const isColorTheoryActive = router.pathname === "/color-theory";
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
