@@ -9,7 +9,7 @@ export default function Header() {
   const { isDark } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
-  const isColorTheoryActive = router.pathname === "/color-theory";
+  // const isColorTheoryActive = router.pathname === "/color-theory";
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 

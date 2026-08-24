@@ -75,8 +75,8 @@ export default function HeroSection() {
           >
             {/* Warm Brown Primary Button */}
             <DownloadButton
-              fileUrl="/assets/Sachin_Frontend_Developer_Resume_4y.pdf"
-              fileName="Sachin_Frontend_Developer_Resume_4y.pdf"
+              fileUrl="/assets/Sachin_Frontend_Engineer_Resume.pdf"
+              fileName="Sachin_Frontend_Engineer_Resume.pdf"
               buttonText="Download Resume"
             />
 
