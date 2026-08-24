@@ -13,6 +13,7 @@ export default function ThemeToggle() {
         isDark ? "border-[#B88E6A]/80" : "border-[#185693]/80"
       }  shadow-sm hover:shadow-md transition-all`}
       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+      aria-pressed={isDark}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       style={{ zIndex: "999" }}

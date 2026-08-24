@@ -1,8 +1,8 @@
 // src/data/experience.js
 export const experiences = [
   {
-    company: "VECTOR3 Digital Tech",
-    location: "Gurugram, India",
+    company: "IKOKAS Technologies PVT LTD",
+    location: "Noida, India",
     duration: "Dec 2025 - Present",
     role: "Software Developer (Frontend Engineer)",
     technologies: [

@@ -28,7 +28,7 @@ export default function Portfolio() {
         image="/assets/img/my-profile.png"
       />
       <div
-        className={`relative min-h-screen flex flex-col transition-colors duration-300 ${isDark ? "bg-[#111612] text-[#E2E8F0]" : "bg-white text-[#185693]"
+        className={`relative min-h-screen w-full max-w-full overflow-x-hidden flex flex-col transition-colors duration-300 ${isDark ? "bg-[#111612] text-[#E2E8F0]" : "bg-white text-[#185693]"
           }`}
       >
         {/* Header */}

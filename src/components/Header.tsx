@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTheme } from "../context/ThemeContext";
 import ThemeToggle from "./ThemeToggle";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -7,6 +8,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 export default function Header() {
   const { isDark } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+  const isColorTheoryActive = router.pathname === "/color-theory";
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -30,26 +33,36 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 font-[600]">
             <Link
-              href="#skills"
+              href="/#skills"
               className={`hover:underline underline-offset-8 ${isDark ? "hover:text-[#93C5FD]" : "hover:text-[#B88E6A]"
                 }`}
             >
               Skills
             </Link>
             <Link
-              href="#projects"
+              href="/#projects"
               className={`hover:underline underline-offset-8 ${isDark ? "hover:text-[#93C5FD]" : "hover:text-[#B88E6A]"
                 }`}
             >
               Projects
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className={`hover:underline underline-offset-8 ${isDark ? "hover:text-[#93C5FD]" : "hover:text-[#B88E6A]"
                 }`}
             >
               Contact
             </Link>
+            {/* <Link
+              href="/color-theory"
+              className={`hover:underline underline-offset-8 ${
+                isColorTheoryActive
+                  ? isDark ? "text-[#93C5FD] underline" : "text-[#B88E6A] underline"
+                  : isDark ? "text-[#ffffff]/90 hover:text-[#93C5FD]" : "text-[#111612]/90 hover:text-[#B88E6A]"
+              }`}
+            >
+              Color Lab
+            </Link> */}
           </nav>
 
           <div className="flex items-center gap-4">
@@ -60,6 +73,7 @@ export default function Header() {
               className={`md:hidden p-2 rounded-full focus:outline-none border border-2 ${isDark ? "border-[#93C5FD]" : "border-[#B88E6A]"
                 }`}
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? (
                 <FiX
@@ -87,7 +101,7 @@ export default function Header() {
           <div className="container mx-auto px-6 py-4">
             <nav className="flex flex-col gap-6 font-[600]">
               <Link
-                href="#skills"
+                href="/#skills"
                 onClick={toggleMenu}
                 className={`py-3 text-lg hover:underline underline-offset-8 ${isDark
                   ? "text-[#93C5FD] hover:text-[#93C5FD]"
@@ -97,7 +111,7 @@ export default function Header() {
                 Skills
               </Link>
               <Link
-                href="#projects"
+                href="/#projects"
                 onClick={toggleMenu}
                 className={`py-3 text-lg hover:underline underline-offset-8 ${isDark
                   ? "text-[#93C5FD] hover:text-[#93C5FD]"
@@ -107,7 +121,7 @@ export default function Header() {
                 Projects
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={toggleMenu}
                 className={`py-3 text-lg hover:underline underline-offset-8 ${isDark
                   ? "text-[#93C5FD] hover:text-[#93C5FD]"
@@ -116,6 +130,16 @@ export default function Header() {
               >
                 Contact
               </Link>
+              {/* <Link
+                href="/color-theory"
+                onClick={toggleMenu}
+                className={`py-3 text-lg hover:underline underline-offset-8 ${isDark
+                  ? isColorTheoryActive ? "text-white underline font-bold" : "text-[#93C5FD] hover:text-[#93C5FD]"
+                  : isColorTheoryActive ? "text-[#185693] underline font-bold" : "text-[#111612] hover:text-[#B88E6A]"
+                  }`}
+              >
+                Color Lab
+              </Link> */}
             </nav>
           </div>
         </div>
